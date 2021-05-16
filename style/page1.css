@@ -1,0 +1,66 @@
+body,html{
+    background-color:#faecd2;
+}
+
+h1 a{
+  text-align: center;
+  background-color: rgba(110, 40, 40, 0.904);
+  color:rgba(250, 185, 161, 0.89);    
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 50px;
+  letter-spacing: 3px;
+  -webkit-box-shadow: 12px 9px 9px -3px rgba(36, 29, 29, 0.92);
+  -moz-box-shadow: 12px 9px 9px -3px rgba(36, 29, 29, 0.92);
+  box-shadow: 12px 9px 9px -3px rgba(36, 29, 29, 0.92);
+}
+
+h1 span{
+ color:rgb(9, 117, 9);
+ background-color:rgb(246, 255, 196);
+ font-family: "Comic Sans MS", cursive, sans-serif;
+ font-style: italic;
+ font-weight: bold;
+ font-size: 50px;
+ letter-spacing: 3px;
+ -webkit-box-shadow: 4px 9px 9px -3px rgba(36, 29, 29, 0.92);
+ -moz-box-shadow: 4px 9px 9px -3px rgba(36, 29, 29, 0.92);
+ box-shadow: 4px 9px 9px -3px rgba(36, 29, 29, 0.92);
+}
+
+h2{
+ background-color:rgba(121, 133, 14, 0.726);
+ color:antiquewhite;
+ width: 130px;
+ font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container{
+ display: inline-grid;
+ grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+ justify-content: space-around;
+ align-items: center;
+ height:240px;
+}
+
+.logo{
+ background-color:rgba(121, 133, 14, 0.726);
+}
+
+.container > .child1 {
+ width: 135px;
+}
+
+.container > .child2 {
+ width: 350px;
+}
+
+
+.container > .child {
+ margin: 5px;
+}
+
+.container > .child3 {
+ margin-top: 45px;
+}

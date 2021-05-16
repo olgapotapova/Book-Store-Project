@@ -1,24 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Fashion Book</title>
+    <title>FashionBook></title>
     <meta charset = "UTF-8">
     <link rel = "stylesheet" type = "text/css"
           href = "../style/style.css">
+    <link rel = "stylesheet" type = "text/css"
+          href = "../style/page1.css">
+    <link rel = "stylesheet" type = "text/css"
+          href = "../style/navigatsion.css">
+    <script src="https://use.fontawesome.com/ef7d32b53e.js"></script>
 </head>
 <body>
-    <h1>Fashion Book</h1>
-    <?php
-    include('../htmlosad/header.php');
-    ?>
+<div class="container">
+    <div class="child">
+    </div>
+    <div class="child child1">
+        <img class="logo" src="../style/pildid/logo.png" alt="logo" style="width: 63px; height: auto;">
+    </div>    
+    <div class="child child2">
+        <h1><a>Fashion </a><span>Book</span></h1>
+    </div> 
+    <div class="child">
+    </div>
+    <div class="child child3">
+        <h2><i class="fa fa-shopping-cart" aria-hidden="true"></i> Your cart</h2>
+    </div>
+</div>
 	
 <main>
-	<form action="" method="post" id="form1">
-		<div class="field">
-			<input type="text" name="search">
-			<input type="hidden" name="product" value="<?= basename(__FILE__, "product.php")?>">
-		</div>
-	</form>
+    <div class="form1">
+	    <form action="" method="post" id="form1">
+		    <div class="field">
+			    <input type="text" name="search" class="border" placeholder="Search...">
+			    <input type="hidden" name="product" value="<?= basename(__FILE__, "product.php")?>">
+		    </div>
+	    </form>
+    </div>
+
+    
+    <?php
+	    include('../htmlosad/navigation.php');
+	?>
 	
 	<form action="" method="post" id="form2">
 		<p><img src="../pildid/" ></p>
