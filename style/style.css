@@ -50,6 +50,7 @@ a:not([class]) {
 
 a{
   text-decoration: none;
+  border-bottom-style: none;
 }
 
 /* Making it easier to work with images */
