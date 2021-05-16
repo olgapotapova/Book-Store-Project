@@ -1,15 +1,7 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Shop</title>
-		<meta charset = "UTF-8">
-		<link rel = "stylesheet" type = "text/css"
-          href = "../style/style.css">
-	</head>
-<body>
-    <?php
-		include('../htmlosad/header.php');
-	?>
+<?php 
+    $title = "Product catalog"; //Title for the page.  Used in the <title> tag
+    include('html-begin.php');
+?>
 <main>
 <h1>The book is the purest essence of the human soul</h1>
 	<form action="" method="post" id="form1">
@@ -41,11 +33,6 @@
     <p><a href="sample.html"><img src="../pildid/" width="50" height="50" alt="foto"></a></p>
 
 
-</main>
-    <?php
-	include('../htmlosad/footer_menu.php');
-    include('../htmlosad/footer.php');
-    ?>
-
-</body>
-</html>
+<?php
+    include('html-end.php');
+?>

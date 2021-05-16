@@ -1,15 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Help</title>
-    <meta charset = "UTF-8">
-    <link rel = "stylesheet" type = "text/css"
-          href = "../style/style.css">
-</head>
-<body>
-    <?php
-    include('../htmlosad/header.php');
-	?>
+<?php 
+    $title = "Administration"; //Title for the page.  Used in the <title> tag
+    include('html-begin.php');
+?>
 <main>
 	<p>
 	From their opening paragraphs alone, 
@@ -23,11 +15,6 @@
 	into choosing your business over competitors.
 	</p>
 
-</main>
-    <?php
-	include('../htmlosad/footer_menu.php');
-    include('../htmlosad/footer.php');
-    ?>
-
-</body>
-</html>
+<?php
+    include('html-end.php');
+?>
