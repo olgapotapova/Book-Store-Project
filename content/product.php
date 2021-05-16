@@ -1,15 +1,7 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Product</title>
-		<meta charset = "UTF-8">
-		<link rel = "stylesheet" type = "text/css"
-          href = "../style/style.css">
-	</head>
-<body>
-    <?php
-		include('../htmlosad/header.php');
-	?>
+<?php 
+    $title = "Fashion Book"; //Title for the page.  Used in the <title> tag
+    include('html-begin.php');
+?>
 <main>
 	<p><img src="../pildid/" ></p>
 	<h1>Product title</h1>
@@ -22,11 +14,6 @@
 	<p><img src="../pildid/" ></p>
 	<p><img src="../pildid/" ></p>
 	</form>
-</main>
-    <?php
-	include('../htmlosad/footer_menu.php');
-    include('../htmlosad/footer.php');
-    ?>
-
-</body>
-</html>
+<?php
+    include('html-end.php');
+?>

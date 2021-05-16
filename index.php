@@ -1,0 +1,13 @@
+<?php
+require_once('conf.php');
+?>
+<?php
+    if(isSet($_GET["page"]))
+    {
+        include('content/'.$_GET["page"]);
+    } 
+    else 
+    {
+        include('content/_main.php');
+    }
+?>

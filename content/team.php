@@ -1,15 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Team</title>
-    <meta charset = "UTF-8">
-    <link rel = "stylesheet" type = "text/css"
-          href = "../style/style.css">
-</head>
-<body>
-    <?php
-    include('../htmlosad/header.php');
-	?>
+<?php 
+    $title = "Fashion Book"; //Title for the page.  Used in the <title> tag
+    include('html-begin.php');
+?>
 <main>
 	<p>
 	From their opening paragraphs alone, 
@@ -22,11 +14,6 @@
 	products or services in more detail, and nudge potential customers 
 	into choosing your business over competitors.
 	</p>
-</main>
-    <?php
-	include('../htmlosad/footer_menu.php');
-    include('../htmlosad/footer.php');
-    ?>
-
-</body>
-</html>
+<?php
+    include('html-end.php');
+?>
