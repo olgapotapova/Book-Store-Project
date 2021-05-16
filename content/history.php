@@ -1,5 +1,5 @@
 <?php 
-    $title = "Fashion Book"; //Title for the page.  Used in the <title> tag
+    $title = "Our history"; //Title for the page.  Used in the <title> tag
     include('html-begin.php');
 ?>
 <main>
