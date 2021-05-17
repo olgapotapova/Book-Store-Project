@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>FashionBook></title>
+    <title><?php echo $title ?></title>
     <meta charset = "UTF-8">
     <link rel = "stylesheet" type = "text/css"
           href = "style/style.css">
