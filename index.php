@@ -1,5 +1,5 @@
 <?php
-    require_once('conf.php');
+    require_once('config.php');
 ?>
 <?php
     if(isSet($_GET["page"]))
