@@ -16,16 +16,16 @@
 
     
     <?php
-	    include('../htmlosad/navigation.php');
+	    include('include/navigation.php');
 	?>
 	
 	<form action="" method="post" id="form2">
-		<p><img src="../pildid/" ></p>
+		<p><img src="style/pildid/" ></p>
 		<dt><input type="submit" name="shop" value="Shop Now" /></dt>
 	</form>
 	
 	<h4>The Last Products</h4>
-	<p><img src="../pildid/" ></p>
+	<p><img src="style/pildid/" ></p>
 	
 	
 <?php
