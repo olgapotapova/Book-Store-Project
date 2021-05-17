@@ -27,6 +27,7 @@ blockquote,
 dl,
 dd {
   margin: 0;
+  list-style: none;
 }
 
 /* We set the basic default settings for the body */
@@ -39,7 +40,7 @@ body {
 
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
 ul[class],
-ol[class] {
+ol[class]{
   list-style: none;
 }
 

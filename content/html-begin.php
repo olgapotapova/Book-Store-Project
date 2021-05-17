@@ -12,6 +12,9 @@
     <script src="https://use.fontawesome.com/ef7d32b53e.js"></script>
 </head>
 <body>
+
+<?php if($title == "Fashion Book") { ?>
+        
 <div class="container">
     <div class="child">
     </div>
@@ -27,7 +30,9 @@
         <h2><i class="fa fa-shopping-cart" aria-hidden="true"></i> Your cart</h2>
     </div>
 </div>
-<h1>Fashion Book</h1>
+
+<?php } ?>
+
     <?php
         include('include/header.php');
     ?>

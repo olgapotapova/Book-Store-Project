@@ -2,7 +2,6 @@
     $title = "Fashion Book"; //Title for the page.  Used in the <title> tag
     include('html-begin.php');
 ?>
-
 	
 <main>
     <div class="form1">
@@ -13,11 +12,6 @@
 		    </div>
 	    </form>
     </div>
-
-    
-    <?php
-	    include('include/navigation.php');
-	?>
 	
 	<form action="" method="post" id="form2">
 		<p><img src="style/pildid/" ></p>
