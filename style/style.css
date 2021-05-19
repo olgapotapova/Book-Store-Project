@@ -73,7 +73,7 @@ select {
   font: inherit;
 }
 
-/* Remove all animations and transitions for people who prefer not to use themь */
+/* Remove all animations and transitions for people who prefer not to use the ms */
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.01ms !important;
@@ -81,6 +81,10 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+body,html{
+  background-color:#faecd2;
 }
 
 

@@ -9,6 +9,10 @@
           href = "style/page1.css">
     <link rel = "stylesheet" type = "text/css"
           href = "style/navigatsion.css">
+    <link rel = "stylesheet" type = "text/css"
+          href = "style/form3.css">
+    <link rel = "stylesheet" type = "text/css"
+          href = "style/full-navbar.css">
     <script src="https://use.fontawesome.com/ef7d32b53e.js"></script>
 </head>
 <body>
@@ -27,7 +31,10 @@
     <div class="child">
     </div>
     <div class="child child3">
-        <h2><i class="fa fa-shopping-cart" aria-hidden="true"></i> Your cart</h2>
+        <h2>
+            <i class="fa fa-shopping-cart" aria-hidden="true" style="padding-left: 10px;"></i>
+            <a href="?page=cart.php" style="color: antiquewhite;"> Your cart</a>
+        </h2>
     </div>
 </div>
 
