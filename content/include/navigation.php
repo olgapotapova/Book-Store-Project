@@ -1,6 +1,7 @@
 ﻿<nav>
     <?php if($title == "Fashion Book") { ?>
         <ul class="horizontal_main">
+            <li class="for_media"></li>
             <li><a href="?page=_main.php">Home</a></li>
             <li><div class="vl"></div></li>
             <li><a href="?page=shop.php">Shop</a></li>

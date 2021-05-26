@@ -15,9 +15,9 @@
 	
 	<form action="" method="post" id="form2" class="form2">
         <div class="container_form2">
-		    <div class="child_form2"><img src="style/pildid/" style="width: 800px; height: auto;"></div>
-            <div class="child_form2"><img src="style/pildid/" style="width: 800px; height: auto;"></div>
-            <div class="child_form2"><img src="style/pildid/" style="width: 800px; height: auto;"></div>
+		    <div class="holder"><div class="child_form2"><img src="style/pildid/book1.jpg" style="width: 25vw; height: auto;"></div></div>
+		    <div class="holder"><div class="child_form2"><img src="style/pildid/book2.jpg" style="width: 25vw; height: auto;"></div></div>
+            <div class="holder"><div class="child_form2"><img src="style/pildid/book3.jpg" style="width: 25vw; height: auto;"></div></div>
         </div>
         <div class="container_shop">
             <dt><input type="submit" name="shop" value="Shop Now"/></dt>
@@ -26,21 +26,35 @@
 	
     <h4>The Last Products</h4>
     <div class="container_last_products">
-	    <div class="child_last_products">
-            <img src="style/pildid/" style="width: 800px; height: auto;">
+        <div class="holder">
+	        <div class="child_last_products">
+                <img src="style/pildid/book1.jpg" style="width: 40vw; height: auto;">
+                <!--<div class="text_img">
+				    <p>Product Name</p>
+                    <p>$300</p>
+                </div>-->
+            </div>
             <div class="text_img">
-				<p>Product Name</p>
+			    <p>Product Name</p>
                 <p>$300</p>
             </div>
         </div>
-        <div class="child_last_products">
-            <img src="style/pildid/" style="width: 800px; height: auto;" >
+        <div class="holder">
+            <div class="child_last_products">
+                <img src="style/pildid/book3.jpg" style="width: 40vw; height: auto;" >
+                <!--<div class="text_img">
+				    <p>Product Name</p>
+                    <p>$300</p>
+                </div>-->
+            </div>
             <div class="text_img">
 				<p>Product Name</p>
                 <p>$300</p>
             </div>
         </div>
     </div>
+
+
 	
 	
 <?php

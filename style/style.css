@@ -45,9 +45,9 @@ ol[class]{
 }
 
 /* Remove the default styling for all ul and il that have a class attribute */
-a:not([class]) {
+/*a:not([class]) {
   text-decoration-skip-ink: auto;
-}
+}*/
 
 a{
   text-decoration: none;
