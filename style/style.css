@@ -38,15 +38,10 @@ body {
   line-height: 1.5;
 }
 
-/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+/* Removable styling for all attributes that have a standard class*/
 ul[class],
 ol[class]{
   list-style: none;
-}
-
-/* Remove the default styling for all ul and il that have a class attribute */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
 }
 
 a{

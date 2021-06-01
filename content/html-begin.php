@@ -20,15 +20,15 @@
 <?php if($title == "Fashion Book") { ?>
         
 <div class="container">
-    <div class="child">
-    </div>
+   <!-- <div class="child">
+    </div>-->
     <div class="child child1">
         <img class="logo" src="style/pildid/logo.png" alt="logo" style="width: 63px; height: auto;">
     </div>    
     <div class="child child2">
         <h1><a>Fashion </a><span>Book</span></h1>
     </div> 
-    <div class="child">
+    <div class="child child_for_media">
     </div>
     <div class="child child3">
         <h2>
