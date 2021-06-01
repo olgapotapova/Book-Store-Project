@@ -41,17 +41,25 @@
     font-size: 25px;
      border: 2px solid   rgba(137, 141, 104, 0.726);
      font-family:monospace;
+     background-color:#faecd2;
+  }
+
+  .src:hover,.input_email:hover{
+    background-color:rgb(142, 233, 177);
   }
 
   .btn{
     width: 200px;
     height: 50px;
-    padding: 12px;
     font-size: 25px;
     background-color: #c1d045;
     border: none;
     color: rgba(121, 133, 14, 0.726);
     font-family:monospace;
+  }
+
+  .btn:hover{
+    background-color:rgb(243, 162, 132);
   }
 
   

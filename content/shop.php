@@ -4,8 +4,8 @@
 ?>
 <main>
     <div class="box">
-<h3>The book is the purest essence of the human soul</h3>
-<hr size="1.8px" width="10%" color="DarkKhaki">
+<h5>The book is the purest essence of the human soul</h5>
+<hr size="1.8px" width="15%" color="DarkKhaki">
 	<form action="" method="post" id="form1">
 		<div class="field">
 			<input class="search" type="text" name="search" placeholder=" &#x1F50E;&#xFE0E; Search...">
@@ -14,7 +14,7 @@
 		</div>
 	</form>
 </div>
-	<h3>Featured Categories</h3> 
+	<h5>Featured Categories</h5> 
 <div class="container_cat">
     <div class="child_cat"><img src="../pildid/" >
         <div class="text_img">

@@ -15,6 +15,8 @@
           href = "style/full-navbar.css">
     <link rel = "stylesheet" type = "text/css"
           href = "style/shop.css">
+    <link rel = "stylesheet" type = "text/css"
+          href = "style/admin.css">
     <script src="https://use.fontawesome.com/ef7d32b53e.js"></script>
 </head>
 <body>

@@ -20,7 +20,7 @@
             <div class="holder"><div class="child_form2"><img src="style/pildid/book3.jpg" style="width: 25vw; height: auto;"></div></div>
         </div>
         <div class="container_shop">
-            <dt><input type="submit" name="shop" value="Shop Now"/></dt>
+            <dt><input type="submit" class="submit" name="shop" value="Shop Now"/></dt>
         </div>
 	</form>
 	

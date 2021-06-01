@@ -1,4 +1,4 @@
-h3 {
+h5 {
     text-align: center;
     font-size: 45px;
     font-family:monospace;
@@ -8,26 +8,32 @@ h3 {
 }
 
 .search{
-    height: 70px;
-    width: 600px;
-    font-size: 30px;
+    height: 60px;
+    width: 550px;
+    font-size: 26px;
     font-family: monospace;
+    background-color:#faecd2;
+    border: 2px solid   rgba(137, 141, 104, 0.726);
   }
 
 .button {
     background-color:rgba(121, 133, 14, 0.726);
     color:antiquewhite;
-    padding: 15px;
-    height: 70px;
+    height: 60px;
     width: 180px;
-    font-size: 25px;
+    font-size: 26px;
+    margin-top: 2px;
+  }
+
+  .button:hover{
+    background-color:rgb(243, 162, 132);
   }
 
 
   .field{
     text-align: center;
     padding-top: 30px;
-    padding-bottom: 30px;
+    margin-bottom: 80px;
 }
 
 .container_cat{
@@ -91,12 +97,12 @@ h3 {
 
   .news{
     display: flex;
-    padding-left: 90px;
+    padding-left: 70px;
 
   }
 
   .logo1{
     border-right: 1.2px solid rgba(121, 133, 14, 0.726);;
-    padding: 100px 210px 100px 210px;
+    padding: 100px 190px 100px 190px;
    
   }

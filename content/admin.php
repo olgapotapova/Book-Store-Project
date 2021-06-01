@@ -27,24 +27,35 @@
 ?>
 <main>
 	<!-- <form action='?page=admin.php' method='post'> -->
+	<div class="container_post">
 	<form action='?page=admin.php' method="post">
-        Author:
-        <input type='text' name='author_field'/>
-		<br>
-		Title:
-		<input type='text' name='title_field'/>
-		<br>
-		Price:
-		<input type='text' name='price_field'/>
-		<br>
-		Genre:
-		<input type='text' name='genre_field'/>
-		<br>
-		Link to the product image:
-		<input type='text' name='imageURL_field'/>
-		<br>
-        <input type='submit' name='add_book' value='Add'/>
+	<ul>
+		<div class="form__line">
+        <label class="label_for-center" for='author_field'>Author: </label>
+        <input class="center" type='text' name='author_field' id='author_field'/>
+		</div>
+		<div class="form__line">
+		<label class="label_for-center" for='title_field'>Title: </label>
+		<input class="center" type='text' name='title_field' id='title_field'/>
+		</div>
+		<div class="form__line">
+		<label class="label_for-center" for='price_field'>Price: </label>
+		<input class="center" type='text' name='price_field' id='price_field'/>
+		</div>
+		<div class="form__line">
+		<label class="label_for-center" for='genre_field'>Genre: </label>
+		<input class="center" type='text' name='genre_field' id='genre_field'/>
+		</div>
+		<div class="form__line">
+		<label class="label_for-center" for=imageURL_field'>Image URL: </label>
+		<input class="center" type='text' name='imageURL_field' id='imageURL_field'/>
+		</div>
+		<div class="form__line">
+        <input class="center" type='submit' name='add_book' value='Add'/>
+		</div>
+	</ul>
     </form>
+	</div>
 	<?php
 
 	?>
