@@ -82,6 +82,11 @@ body,html{
   background-color:#faecd2;
 }
 
-
+footer{
+  color:rgba(106, 117, 9, 0.699);
+  font-size: 20px;
+  margin: 1% auto 1% 5%;
+  font-family:monospace;
+}
 
 
