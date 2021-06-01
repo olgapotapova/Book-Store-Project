@@ -4,7 +4,7 @@
 ?>
 <main>
     <div class="box">
-<h1>The book is the purest essence of the human soul</h1>
+<h3>The book is the purest essence of the human soul</h3>
 <hr size="1.8px" width="10%" color="DarkKhaki">
 	<form action="" method="post" id="form1">
 		<div class="field">
@@ -14,24 +14,28 @@
 		</div>
 	</form>
 </div>
-	<h1>Featured Categories</h1> 
+	<h3>Featured Categories</h3> 
 <div class="container_cat">
-<div class="child_cat"><img src="../pildid/" >
-<div class="text_img">
-    <p>CATEGORY</p>
-</div>
-</div>
-<div class="child_cat"><img src="../pildid/" >
-<div class="text_img">
-    <p>CATEGORY</p>
-</div>
-</div>
-<div class="child_cat"><img src="../pildid/" >
-<div class="text_img">
-    <p>CATEGORY</p>
-</div>
-</div>
-<div class="child_cat"><img src="../pildid/" ></div>
+    <div class="child_cat"><img src="../pildid/" >
+        <div class="text_img">
+        <p>CATEGORY</p>
+        </div>
+    </div>
+    <div class="child_cat"><img src="../pildid/" >
+        <div class="text_img">
+        <p>CATEGORY</p>
+        </div>
+    </div>
+    <div class="child_cat"><img src="../pildid/" >
+        <div class="text_img">
+        <p>CATEGORY</p>
+        </div>
+    </div>
+    <div class="child_cat"><img src="../pildid/" >
+        <div class="text_img">
+        <p class="cat4"></p>
+        </div>
+    </div>
 </div>
 <table>
 <td class="logo1">

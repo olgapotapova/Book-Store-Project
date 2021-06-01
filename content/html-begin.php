@@ -13,6 +13,8 @@
           href = "style/form3.css">
     <link rel = "stylesheet" type = "text/css"
           href = "style/full-navbar.css">
+    <link rel = "stylesheet" type = "text/css"
+          href = "style/shop.css">
     <script src="https://use.fontawesome.com/ef7d32b53e.js"></script>
 </head>
 <body>

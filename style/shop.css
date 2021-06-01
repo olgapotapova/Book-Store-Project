@@ -1,10 +1,10 @@
-h1 {
+h3 {
     text-align: center;
-    font-size: 48px;
+    font-size: 45px;
     font-family:monospace;
     font-weight: normal;
     color: rgba(121, 133, 14, 0.726);
-    margin-top: 5%;
+    margin-top: 7%;
 }
 
 .search{
@@ -54,6 +54,10 @@ h1 {
     height: auto;
   }
 
+  .cat4{
+    height: 27px;
+  }
+
   .container_books{
     display: inline-grid;
     grid-template-rows: repeat(3, auto);
@@ -86,6 +90,7 @@ h1 {
   }
 
   .news{
+    display: flex;
     padding-left: 90px;
 
   }
