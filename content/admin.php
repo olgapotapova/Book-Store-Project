@@ -1,9 +1,8 @@
 <?php
 $title = "Administration"; //Title for the page.  Used in the <title> tag
 include('html-begin.php');
-
-
 require_once('config.php');
+
 //andmete lisamine ab tabelisse
 if (isset($_REQUEST["add_book"])) {
 	echo "Lisa raamat";
@@ -19,26 +18,8 @@ if (isset($_REQUEST["add_book"])) {
 	$kask->execute();
 	echo $yhendus -> error;
 	$yhendus->close();
-	//header("Location: $_SERVER[PHP_SELF]?page=admin.php");
 	exit();
 }
-
-
-
-/*require_once('config.php');
-	if(isSet($_REQUEST['add_book']))
-	{
-		$author = $_REQUEST["author_field"];
-		$title = $_REQUEST["title_field"];
-		$cost = $_REQUEST["price_field"];
-		$genre = $_REQUEST["genre_field"];
-		$picture = $_REQUEST["imageURL_field"];
-		$kask = $dbConnection -> prepare("INSERT INTO Books (author, title, cost, genre, picture) 
-		VALUES (?,?,?,?,?)");
-		echo $dbConnection -> error;
-		$kask-> bind_param("ssdss", $author, $title, $cost, $genre, $picture);
-		$kask-> execute();
-	}*/
 
 if (isset($_REQUEST["remove_book"])) {
 	$command = $yhendus->prepare("DELETE FROM Books WHERE bookId = ?");
@@ -50,9 +31,7 @@ if (isset($_REQUEST["remove_book"])) {
 }
 ?>
 <main>
-	<!-- <form action='?page=admin.php' method='post'> -->
 	<div class="container_post">
-		<!--<form action='?page=admin.php' method="post">-->
 		<form action='?page=admin.php' method="post">
 			<input type="hidden" name="add_book" value="jah">
 			<ul>
@@ -84,9 +63,7 @@ if (isset($_REQUEST["remove_book"])) {
 			</ul>
 		</form>
 	</div>
-	<?php
 
-	?>
 	<?php
 	$items;
 	$cnt = 0;
@@ -109,12 +86,11 @@ if (isset($_REQUEST["remove_book"])) {
 		echo "<th>Price</th>";
 		foreach ($items as $item) {
 			echo "<tr>";
-
+			//Listing properties of the book
 			foreach ($item as $subitem) {
 				echo "<td>$subitem</td>";
 			}
 			//Delete button
-			echo $item[0];
 			echo "<td><form action='?page=admin.php' method='post'>
 					<input type = 'hidden' name = 'id' value = '$item[0]'/>
 					<input type = 'submit' name = 'remove_book' value = 'Remove'/>
@@ -126,6 +102,5 @@ if (isset($_REQUEST["remove_book"])) {
 		echo "There are currently no books in the database.";
 	}
 	?>
-
 
 	<?php include('html-end.php');
