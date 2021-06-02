@@ -4,6 +4,7 @@
 ?>
 	
 <main>
+
     <div class="form1">
 	    <form action="" method="post" id="form1">
 		    <div class="field">
@@ -29,10 +30,6 @@
         <div class="holder">
 	        <div class="child_last_products">
                 <img src="style/pildid/book1.jpg" style="width: 40vw; height: auto;">
-                <!--<div class="text_img">
-				    <p>Product Name</p>
-                    <p>$300</p>
-                </div>-->
             </div>
             <div class="text_img">
 			    <p>Product Name</p>
@@ -42,10 +39,6 @@
         <div class="holder">
             <div class="child_last_products">
                 <img src="style/pildid/book3.jpg" style="width: 40vw; height: auto;" >
-                <!--<div class="text_img">
-				    <p>Product Name</p>
-                    <p>$300</p>
-                </div>-->
             </div>
             <div class="text_img">
 				<p>Product Name</p>
