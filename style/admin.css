@@ -6,6 +6,9 @@
 }*/
 
 .container_post{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     width: 300px;
     margin: 20px auto;
     background-color:rgb(164, 175, 141);

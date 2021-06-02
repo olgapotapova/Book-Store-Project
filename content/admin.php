@@ -51,6 +51,7 @@
 		<input class="center" type='text' name='imageURL_field' id='imageURL_field'/>
 		</div>
 		<div class="form__line">
+		<label class="label_for-center" for=imageURL_field'></label>
         <input class="center" type='submit' name='add_book' value='Add'/>
 		</div>
 	</ul>
