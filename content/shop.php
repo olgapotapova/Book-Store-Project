@@ -49,7 +49,7 @@
 </table>
 
 <div class="container_books">
-<div class="child_books"><a href="sample.html"><img src="style/pildid/book1.jpg" width="15vw" height="auto" alt="foto"></a></div>
+<div class="child_books"><a href="./content/product.php"><img src="style/pildid/book1.jpg" width="15vw" height="auto" alt="foto"></a></div>
 <div class="child_books">
 				<div class="booktext_img"><p>Product Name</p>
                 <p>&#9733;&#9733;&#9733;&#9734;&#9734;</p>
@@ -57,35 +57,35 @@
                 </div>
             </div>
 
-<div class="child_books"><a href="sample.html"><img src="style/pildid/book1.jpg" width="15vw" height="auto" alt="foto"></a></div>
+<div class="child_books"><a href="./content/product.php"><img src="style/pildid/book1.jpg" width="15vw" height="auto" alt="foto"></a></div>
 <div class="child_books">
 				<div class="booktext_img"><p>Product Name</p>
                 <p>&#9733;&#9733;&#9733;&#9734;&#9734;</p>
                 <p>$300</p>
                 </div>
             </div>
-<div class="child_books"><a href="sample.html"><img src="style/pildid/book1.jpg" width="15vw" height="auto" alt="foto"></a></div>
+<div class="child_books"><a href="./content/product.php"><img src="style/pildid/book1.jpg" width="15vw" height="auto" alt="foto"></a></div>
 <div class="child_books">
 				<div class="booktext_img"><p>Product Name</p>
                 <p>&#9733;&#9733;&#9733;&#9734;&#9734;</p>
                 <p>$300</p>
                 </div>
             </div>
-<div class="child_books"><a href="sample.html"><img src="style/pildid/book1.jpg" width="15vw" height="auto" alt="foto"></a></div>
+<div class="child_books"><a href="./content/product.php"><img src="style/pildid/book1.jpg" width="15vw" height="auto" alt="foto"></a></div>
 <div class="child_books">
 				<div class="booktext_img"><p>Product Name</p>
                 <p>&#9733;&#9733;&#9733;&#9734;&#9734;</p>
                 <p>$300</p>
                 </div>
             </div>
-<div class="child_books"><a href="sample.html"><img src="style/pildid/book1.jpg" width="15vw" height="auto" alt="foto"></a></div>
+<div class="child_books"><a href="./content/product.php"><img src="style/pildid/book1.jpg" width="15vw" height="auto" alt="foto"></a></div>
 <div class="child_books">
 				<div class="booktext_img"><p>Product Name</p>
                 <p>&#9733;&#9733;&#9733;&#9734;&#9734;</p>
                 <p>$300</p>
                 </div>
             </div>
-<div class="child_books"><a href="sample.html"><img src="style/pildid/book1.jpg" width="15vw" height="auto" alt="foto"></a></div>
+<div class="child_books"><a href="./content/product.php"><img src="style/pildid/book1.jpg" width="15vw" height="auto" alt="foto"></a></div>
 <div class="child_books">
 				<div class="booktext_img"><p>Product Name</p>
                 <p>&#9733;&#9733;&#9733;&#9734;&#9734;</p>

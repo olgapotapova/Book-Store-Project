@@ -7,5 +7,5 @@
     $database = "d86295_bookstore";
     $yhendus = new mysqli($servername, $username, $password, $database);
     /* Use UTF8 encoding for database */
-   $yhendus -> set_charset("utf8");
+    $yhendus -> set_charset("utf8");
 ?>
