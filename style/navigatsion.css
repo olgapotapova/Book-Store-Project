@@ -1,3 +1,5 @@
+  /* Import fonts from Google's font library*/
+  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Source+Sans+Pro:wght@300&family=Space+Mono:wght@700&display=swap');
   .horizontal_main{
     width:100%;
     display: grid;
@@ -19,9 +21,11 @@
   
    .horizontal_main > li > a,
    .horizontal_page > li > a{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-family: 'Space Mono', monospace;
     font-size: 18px;
-    font-weight: bolder;
+    /* font-weight: bolder; */
+    font-weight: bold;
     color:rgba(106, 117, 9, 0.699);
    }
   

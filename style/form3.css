@@ -1,4 +1,6 @@
-.form3 > h4{
+/* Import fonts from Google's font library*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Source+Sans+Pro:wght@300&family=Space+Mono:wght@700&display=swap');
+form3 > h4{
     text-align: left;
     padding-left: 10%;
   }
@@ -27,6 +29,7 @@
   width: 30vw;
   font-size: 20px;
   font-family:monospace;
+  padding: 0;
 }
 
 .container_form3 > p {
