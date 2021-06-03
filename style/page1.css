@@ -108,7 +108,7 @@ h2{
  }
 
 input { 
-  /* font-family: 'FontAwesome';  */
+   /*font-family: 'FontAwesome'; */ 
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
   background-color:rgba(121, 133, 14, 0.726);
@@ -157,8 +157,8 @@ input[type="submit"]:hover {
   background: rgba(137, 141, 104, 0.726);
   position: relative;
   overflow:hidden;
-  width:300px;
-  height:300px;
+  width:30vw;
+  height:30vw;
 }
 
 .child_form2 img {
@@ -167,8 +167,7 @@ input[type="submit"]:hover {
   left:50%;
   width:100%;
   height:100%;
-  transform:translate(-50%,-50%);
-  background-size: contain;
+  transform:translate(-60%,-50%);
 }
 
 .container_shop{
@@ -219,18 +218,17 @@ h4{
   background: rgba(137, 141, 104, 0.726);
   position: relative;
   overflow:hidden;
-  width:500px;
-  height:300px;
+  width:50vw;
+  height:30vw;
 }
 
 .child_last_products img {
   position: absolute;
   top:50%;
   left:50%;
-  transform:translate(-50%,-50%);
+  transform:translate(-65%,-50%);
   width:100%;
   height:100%;
-  object-fit:cover;
 }
 
 
@@ -249,14 +247,15 @@ h4{
   border-radius: 50px 50px 50px 50px;
   width: 250px;
   border: 1.5px solid rgba(121, 133, 14, 0.726);
-  margin: 20px auto auto 30px;
+  margin: -20px auto auto 30px;
   color:rgba(106, 117, 9, 0.699);
+  font-family: 'FontAwesome';
  }
 
  @media (max-width: 680px) {
   .border{   
     width: 100%;
-    margin: 20px auto auto 0px;
+    margin: -30px auto auto 0px;
   }
  }
  
