@@ -1,3 +1,5 @@
+/* Import fonts from Google's font library*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Source+Sans+Pro:wght@300&family=Space+Mono:wght@700&display=swap');
 .container_navbar{
     display: inline-grid;
     grid-template-columns: repeat(5,auto);
@@ -19,15 +21,26 @@
 
 .child_navbar > h3 {
     color: rgba(121, 133, 14, 0.726);
-    font-size: 20px;
-    font-family:monospace;
-    font-weight: normal;
+    /* font-size: 20px; */
+    font-size: 25px;
+    /* font-family:monospace; */
+    font-family: 'Source Sans Pro', sans-serif;
+    /* font-weight: normal; */
+    font-weight: bold;
     white-space: nowrap;
 }
 
 .child_navbar > li > a {
     color: rgba(121, 133, 14, 0.726) !important;
-    font-size: 16px;
-    font-family:monospace;
+    /* font-size: 16px; */
+    font-size: 20px;
+    /* font-family:monospace; */
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
     white-space: nowrap;
+}
+
+.child_navbar > li {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
 }

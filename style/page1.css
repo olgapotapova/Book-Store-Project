@@ -1,3 +1,5 @@
+/* Import fonts from Google's font library*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Source+Sans+Pro:wght@300&family=Space+Mono:wght@700&display=swap');
 h1 a{
   text-align: center;
   background-color: rgba(110, 40, 40, 0.904);
@@ -106,7 +108,22 @@ h2{
  }
 
 input { 
-  font-family: 'FontAwesome'; 
+  /* font-family: 'FontAwesome';  */
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  background-color:rgba(121, 133, 14, 0.726);
+  /*Flat buttons */
+  border: 0;
+
+}
+input[type="submit"]{
+    padding: 0 40px;
+    color: antiquewhite;
+}
+
+input[type="submit"]:hover {
+  background-color:rgb(243, 162, 132);
+  cursor: pointer;
 }
 
 .border:before{
@@ -177,8 +194,10 @@ dt > input{
 h4{
   text-align: center;
   font-size: 48px;
-  font-family:monospace;
-  font-weight: normal;
+  /* font-family:monospace; */
+  font-family: 'Lato', sans-serif;
+  /* font-weight: normal; */
+  font-weight: 300;
   color: rgba(121, 133, 14, 0.726);
   margin-top: 5%;
 }
@@ -240,3 +259,4 @@ h4{
     margin: 20px auto auto 0px;
   }
  }
+ 
