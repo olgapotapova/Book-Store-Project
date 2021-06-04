@@ -6,10 +6,10 @@
 <main>
 
     <div class="form1">
-	    <form action="" method="post" id="form1">
+	    <form action='?page=product.php' method="post" id="form1">
 		    <div class="field">
-                <input type="text" name="search" id="search" class="border"  placeholder="   Search...">
-			    <input type="hidden" name="product" value="<?= basename(__FILE__, "product.php")?>">
+                <input type="text" name="search" id="search" class="border"  placeholder="  Search...">
+                <input type="hidden" name="product" value="<?= basename(__FILE__, "product.php")?>">
 		    </div>
 	    </form>
     </div>

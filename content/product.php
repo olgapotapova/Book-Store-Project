@@ -3,14 +3,44 @@
     include('html-begin.php');
 ?>
 <main>
+
 <?php
-require_once('config.php');
-$kask=$yhendus->prepare("Select bookId, author, title, cost, genre, picture FROM Books");
-//$kask->bind_param("i", $_REQUEST["id"]);
-//i - integer, s - string, d - double
-$kask->bind_result($id, $author, $title, $cost, $genre, $picture);
-$kask->execute();
-?>
+	$items;
+	$cnt = 0;
+	$index = 0;
+	//$search = $_REQUEST['search'];
+	$command = $yhendus->prepare("SELECT bookId, author, title, cost, genre, picture FROM Books WHERE author like ?");// LIKE %search%
+	if (!$command) {
+		die("Connection failed: " . mysqli_connect_error());
+	}
+	$command->bind_param("s", $_REQUEST["search"]);
+	$command->bind_result($id, $author, $title, $cost, $genre, $picture);
+	$command->execute();
+	while ($command->fetch()) {
+		$book = array($id, $author, $title, $cost, $genre);
+		$items[$index] = $book;
+		$cnt += 1;
+		$index += 1;
+	}
+	if ($cnt > 0) {
+		echo "<table>";
+		echo "<th></th>";
+		echo "<th>Title</th>";
+		echo "<th>Author</th>";
+		echo "<th>Genre</th>";
+		echo "<th>Price</th>";
+		foreach ($items as $item) {
+			echo "<tr>";
+
+			foreach ($item as $subitem) {
+				echo "<td>$subitem</td>";
+			}
+		}
+		echo "</table>";
+	} else {
+		echo "There are currently no books in the database.";
+	}
+	?>
 
 	<p><img src="../pildid/" ></p>
 	<h1>Product title</h1>
