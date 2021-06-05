@@ -52,13 +52,12 @@ if (isset($_REQUEST["remove_book"])) {
 					<input class="center" type='text' name='genre_field' id='genre_field' />
 				</div>
 				<div class="form__line">
-					<label class="label_for-center" for=imageURL_field'>Image URL: </label>
+					<label class="label_for-center" for='imageURL_field'>Image URL: </label>
 					<input class="center" type='text' name='imageURL_field' id='imageURL_field' />
 				</div>
 				<div class="form__line">
-					<label class="label_for-center" for=imageURL_field'></label>
-					<input class="center" type='submit' name='add_book' value='Add' />
-					<!-- <input type = "submit" value = "Add" onclick="location.href='https://olgapotapova.thkit.ee/Bookstore/content/admin.php'"> -->
+					<label class="label_for-center" for='imageURL_field'></label>
+					<input class="button" type='submit' name='add_book' value='Add' />
 				</div>
 			</ul>
 		</form>
@@ -68,22 +67,23 @@ if (isset($_REQUEST["remove_book"])) {
 	$items;
 	$cnt = 0;
 	$index = 0;
-	$command = $yhendus->prepare("SELECT bookId, author, title, cost, genre, picture FROM Books");
-	$command->bind_result($id, $author, $title, $cost, $genre, $picture);
+	$command = $yhendus->prepare("SELECT bookId, author, title, genre, cost, picture FROM Books");
+	$command->bind_result($id, $author, $title, $genre, $cost, $picture);
 	$command->execute();
 	while ($command->fetch()) {
-		$book = array($id, $author, $title, $cost, $genre);
+		$book = array($id, $author, $title, $genre, $cost);
 		$items[$index] = $book;
 		$cnt += 1;
 		$index += 1;
 	}
 	if ($cnt > 0) {
 		echo "<table>";
-		echo "<th></th>";
+		echo "<th>ID</th>";
 		echo "<th>Title</th>";
 		echo "<th>Author</th>";
 		echo "<th>Genre</th>";
 		echo "<th>Price</th>";
+		echo "<th>Button</th>";
 		foreach ($items as $item) {
 			echo "<tr>";
 			//Listing properties of the book

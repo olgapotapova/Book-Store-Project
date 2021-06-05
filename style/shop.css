@@ -48,9 +48,16 @@ h5 {
     align-items: center;
     gap: 8%;
     padding: 10% 10% 10% 9%;
-    border-bottom: 1.2px solid   rgba(137, 141, 104, 0.726);
-    
+    border-bottom: 1.2px solid   rgba(137, 141, 104, 0.726);  
   }
+
+  @media (max-width:1200px){
+    .container_cat{
+      grid-template-columns: repeat(auto-fill, 400px);
+      margin-bottom: 10%;
+    }
+  }
+
   .box{
     border-bottom: 1.2px solid   rgba(137, 141, 104, 0.726);
     padding: 10px;
