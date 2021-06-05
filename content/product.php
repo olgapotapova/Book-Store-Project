@@ -8,20 +8,21 @@
 	$items;
 	$cnt = 0;
 	$index = 0;
-	//$search = $_REQUEST['search'];
-	$command = $yhendus->prepare("SELECT bookId, author, title, cost, genre, picture FROM Books WHERE author like ?");// LIKE %search%
+	$search = $_REQUEST['search'];
+	$command = $yhendus->prepare("SELECT bookId, author, title, cost, genre, picture FROM Books");
 	if (!$command) {
 		die("Connection failed: " . mysqli_connect_error());
 	}
-	$command->bind_param("s", $_REQUEST["search"]);
 	$command->bind_result($id, $author, $title, $cost, $genre, $picture);
 	$command->execute();
 	while ($command->fetch()) {
 		$book = array($id, $author, $title, $cost, $genre);
+		if (strpos(implode(" ", $book), $search) !== false){
 		$items[$index] = $book;
 		$cnt += 1;
-		$index += 1;
+		$index += 1;}
 	}
+
 	if ($cnt > 0) {
 		echo "<table>";
 		echo "<th></th>";
