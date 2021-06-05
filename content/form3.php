@@ -1,7 +1,7 @@
-<?php if($title == "Fashion Book") { ?>
-	
-	
-	<form action="" method="post" id="form3" class="form3">
+<?php if(!isset($_POST['email'])){
+	if($title == "Fashion Book") { ?>
+
+	 <form action="" method="post" id="form3" class="form3">
 	<h4>Newsletter</h4>
 	<div class="container_form3">
 		<p>Subscribe to the newsletter:</p>
@@ -20,4 +20,19 @@
 	</form>
     <?php
        }
-    ?>
+} else {
+ $data = " ";
+ $email = $_POST['email'];
+ $email = htmlspecialchars($email);
+ $email = urldecode($email);
+ $email = trim($email);
+ $email_file = fopen('./file.txt', 'a');
+ fwrite($email_file, $email);
+ fwrite($email_file, $data);
+ fclose($email_file);
+ ?><h4>Email was succserfully saved</h4>
+ <?php
+}
+?>
+
+
