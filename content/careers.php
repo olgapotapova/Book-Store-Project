@@ -3,7 +3,18 @@
     include('html-begin.php');
 ?>
 <main>
-	<p>
+	<h4>Feedback</h4>
+	<table class="table-feedback">
+		<th>AZON.market</th>
+		<th>Pfone</th>
+		<th>Working hours</th>
+	<tr>
+		<td>RBLA Universitat 20, 4-4, Puerta 2, 08007 Barcelona</td>
+		<td>+371 66118040</td>
+		<td>09:00 - 18:00</td>
+		</tr>
+	</table>
+	<article>
 	From their opening paragraphs alone, 
 	I'm willing to bet you're persuaded to check out one brand in 
 	more detail over the other. It isn't just the language itself 
@@ -13,7 +24,7 @@
 	It can intrigue a new visitor to check out your 
 	products or services in more detail, and nudge potential customers 
 	into choosing your business over competitors.
-	</p>
+	</article>
 <?php
     include('html-end.php');
 ?>

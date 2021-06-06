@@ -3,7 +3,7 @@
     include('html-begin.php');
 ?>
 <main>
-	<p>
+	<article>
 	From their opening paragraphs alone, 
 	I'm willing to bet you're persuaded to check out one brand in 
 	more detail over the other. It isn't just the language itself 
@@ -13,7 +13,7 @@
 	It can intrigue a new visitor to check out your 
 	products or services in more detail, and nudge potential customers 
 	into choosing your business over competitors.
-	</p>
+	</article>
 <?php
     include('html-end.php');
 ?>

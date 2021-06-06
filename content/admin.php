@@ -1,3 +1,4 @@
+
 <?php
 $title = "Administration"; //Title for the page.  Used in the <title> tag
 include('html-begin.php');
@@ -31,6 +32,8 @@ if (isset($_REQUEST["remove_book"])) {
 }
 ?>
 <main>
+	
+<h4>Administratsion</h4>
 	<div class="container_post">
 		<form action='?page=admin.php' method="post">
 			<input type="hidden" name="add_book" value="jah">

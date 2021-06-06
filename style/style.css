@@ -93,4 +93,17 @@ footer{
   font-weight:  300;
 }
 
+article{
+  margin: 10%;
+  font-size: 20px;
+  color:olivedrab;
+  text-align: justify;
+  min-height: 680px;
+
+}
+.table-feedback{
+  width: 80%;
+  margin: 40px auto;
+}
+
 

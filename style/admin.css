@@ -1,20 +1,12 @@
 /* Import fonts from Google's font library*/
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Source+Sans+Pro:wght@300&family=Space+Mono:wght@700&display=swap');
-/* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-}*/
 
 .container_post{
     box-sizing: border-box;
-    margin: 0;
     padding: 0;
     width: 300px;
-    margin: 20px auto;
-    background-color:rgb(164, 175, 141);
-    border-radius: 5px;
+    margin-top: 8%;
+    margin-left: 10%;
     font-size: 20px;
 }
 
@@ -43,6 +35,8 @@ ul {
     padding: 8px;
     width: 20vw;
     background-color:#faecd2;
+    color: darkolivegreen;
+    border: 3px solid rgb(164, 175, 141);
 }
 
 .center:hover{
@@ -51,13 +45,48 @@ ul {
 
 .form__line > button {
     background: #808080;
-    color: #fff;
     border: 5px;
     padding: 8px;
-    color: darkolivegreen;
+    color: darkolivegreen !important;
 }
 
 .form__line > button:hover{
     background-color:rgb(243, 162, 132);
   }
 
+  table{
+      position: absolute;
+      margin-left: 37%;
+      margin-top: -430px;
+      width: 60%;
+      border: 3px solid rgb(164, 175, 141);
+  }
+
+  table th{
+    width: 10vw;
+    height: 51px;
+    border: 3px solid rgb(164, 175, 141);
+  }
+  table tr td{
+    width: 10vw;
+    height: 51px;
+    border: 3px solid rgb(164, 175, 141);
+    text-align: center;
+  }
+
+  @media (max-width: 1140px){
+    .container_post{
+        margin: auto;
+        width: 80%;
+    }
+    table{ 
+      position: relative;
+      margin-top: 0px;
+      margin-left: 3%;
+      margin-right: 3%;
+      width: 94%;
+    }
+  }
+  @media (max-width: 524px){
+
+  }
