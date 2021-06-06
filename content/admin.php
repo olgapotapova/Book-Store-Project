@@ -6,7 +6,7 @@ require_once('config.php');
 
 //andmete lisamine ab tabelisse
 if (isset($_REQUEST["add_book"])) {
-	echo "Lisa raamat";
+	echo "<h4>Book added!</h4>";
 	$kask = $yhendus->prepare("INSERT INTO Books(author,title,cost,genre,picture) VALUES (?,?,?,?,?)");
 	$kask->bind_param(
 		"sssss",
@@ -32,7 +32,7 @@ if (isset($_REQUEST["remove_book"])) {
 }
 ?>
 <main>
-	
+<section>	
 <h4>Administratsion</h4>
 	<div class="container_post">
 		<form action='?page=admin.php' method="post">
@@ -105,5 +105,5 @@ if (isset($_REQUEST["remove_book"])) {
 		echo "There are currently no books in the database.";
 	}
 	?>
-
+</section>
 	<?php include('html-end.php');

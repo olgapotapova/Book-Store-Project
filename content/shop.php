@@ -3,10 +3,11 @@
     include('html-begin.php');
 ?>
 <main>
+<section>
     <div class="box">
 <h5>The book is the purest essence of the human soul</h5>
 <hr size="1.8px" width="15%" color="DarkKhaki">
-	<form action="" method="post" id="form1">
+	<form action='?page=product.php' method="post" id="form1">
 		<div class="field">
 			<input class="search" type="text" name="search" placeholder=" &#x1F50E;&#xFE0E; Search...">
 			<input type="hidden" name="product" value="<?=basename(__FILE__, "product.php")?>">
@@ -53,7 +54,7 @@
 <div class="child_books">
 				<div class="booktext_img"><p>Product Name</p>
                 <p>&#9733;&#9733;&#9733;&#9734;&#9734;</p>
-                <p>$300</p>
+                <p>$12</p>
                 </div>
             </div>
 
@@ -61,39 +62,39 @@
 <div class="child_books">
 				<div class="booktext_img"><p>Product Name</p>
                 <p>&#9733;&#9733;&#9733;&#9734;&#9734;</p>
-                <p>$300</p>
+                <p>$35</p>
                 </div>
             </div>
 <div class="child_books"><a href="./content/product.php"><img src="style/pildid/book1.jpg" width="15vw" height="auto" alt="foto"></a></div>
 <div class="child_books">
 				<div class="booktext_img"><p>Product Name</p>
                 <p>&#9733;&#9733;&#9733;&#9734;&#9734;</p>
-                <p>$300</p>
+                <p>$15</p>
                 </div>
             </div>
 <div class="child_books"><a href="./content/product.php"><img src="style/pildid/book1.jpg" width="15vw" height="auto" alt="foto"></a></div>
 <div class="child_books">
 				<div class="booktext_img"><p>Product Name</p>
                 <p>&#9733;&#9733;&#9733;&#9734;&#9734;</p>
-                <p>$300</p>
+                <p>$40</p>
                 </div>
             </div>
 <div class="child_books"><a href="./content/product.php"><img src="style/pildid/book1.jpg" width="15vw" height="auto" alt="foto"></a></div>
 <div class="child_books">
 				<div class="booktext_img"><p>Product Name</p>
                 <p>&#9733;&#9733;&#9733;&#9734;&#9734;</p>
-                <p>$300</p>
+                <p>$30</p>
                 </div>
             </div>
 <div class="child_books"><a href="./content/product.php"><img src="style/pildid/book1.jpg" width="15vw" height="auto" alt="foto"></a></div>
 <div class="child_books">
 				<div class="booktext_img"><p>Product Name</p>
                 <p>&#9733;&#9733;&#9733;&#9734;&#9734;</p>
-                <p>$300</p>
+                <p>$60</p>
                 </div>
             </div>
 <div>
-
+</section>
 <?php
     include('html-end.php');
 ?>

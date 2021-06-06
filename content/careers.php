@@ -3,6 +3,7 @@
     include('html-begin.php');
 ?>
 <main>
+<section>
 	<h4>Feedback</h4>
 	<table class="table-feedback">
 		<th>AZON.market</th>
@@ -25,6 +26,7 @@
 	products or services in more detail, and nudge potential customers 
 	into choosing your business over competitors.
 	</article>
+</section>
 <?php
     include('html-end.php');
 ?>

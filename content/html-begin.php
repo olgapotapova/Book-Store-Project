@@ -17,6 +17,8 @@
           href = "style/shop.css">
     <link rel = "stylesheet" type = "text/css"
           href = "style/admin.css">
+    <link rel = "stylesheet" type = "text/css"
+          href = "style/product.css">
     <script src="https://use.fontawesome.com/ef7d32b53e.js"></script>
 </head>
 <body>
@@ -35,7 +37,7 @@
     <div class="child child_for_media">
     </div>
     <div class="child child3">
-        <h2>
+        <h2 style="padding-top: -10px;">
             <i class="fa fa-shopping-cart" aria-hidden="true" style="padding-left: 10px;"></i>
             <a href="?page=cart.php" style="color: antiquewhite;"> Your cart</a>
         </h2>

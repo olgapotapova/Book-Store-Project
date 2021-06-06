@@ -16,7 +16,6 @@ ol[class] {
 /* Removing margins */
 body,
 h1,
-h2,
 h3,
 h4,
 p,
@@ -104,6 +103,20 @@ article{
 .table-feedback{
   width: 80%;
   margin: 40px auto;
+}
+.logo3{
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+section{
+  border-top: 1px solid darkolivegreen !important;
+}
+.header{
+  height: 1.5vw;
+}
+h2{
+  margin-top: -8px;
 }
 
 

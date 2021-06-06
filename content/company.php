@@ -3,6 +3,7 @@
     include('html-begin.php');
 ?>
 <main>
+<section>
 	<h4>About company</h4>
 	<article>
 	“The Bookstore offers all interested parties the publication of African Fairy Tales. This beautifully designed book will be a real gem in any library. The book can be found.
@@ -17,6 +18,7 @@
 	Hurry, the edition is on sale at a discount only on holidays. "
 	</p>
 	</article>
+</section>
 <?php
     include('html-end.php');
 ?>

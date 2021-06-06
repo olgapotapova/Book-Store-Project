@@ -3,6 +3,7 @@
     include('html-begin.php');
 ?>
 <main>
+<section>
 	<article>
 	From their opening paragraphs alone, 
 	I'm willing to bet you're persuaded to check out one brand in 
@@ -14,6 +15,7 @@
 	products or services in more detail, and nudge potential customers 
 	into choosing your business over competitors.
 	</article>
+</section>
 <?php
     include('html-end.php');
 ?>
