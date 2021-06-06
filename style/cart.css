@@ -1,0 +1,78 @@
+/* Import fonts from Google's font library*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Source+Sans+Pro:wght@300&family=Space+Mono:wght@700&display=swap');
+.cart__container form{
+    display: flex;
+    justify-content:flex-start;
+    margin-top: 5%;
+    padding: 5%;
+    border-top: 1px solid DarkKhaki;
+    border-bottom: 1px solid DarkKhaki;
+    width: 60%;
+    line-height: 0.5 !important;
+}
+
+.holder{
+    position: relative;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    object-fit:cover;
+  }
+
+.cart__child1{
+    background: rgba(137, 141, 104, 0.726);
+    position: relative;
+    overflow:hidden;
+    width:20vw;
+    height:13vw;
+  }
+  
+  .cart__child1 img {
+    position: absolute;
+    width:100%;
+    height:100%;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+  }
+  .cart__child2{
+    color: darkolivegreen;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding-left: 8%;
+  }
+  .cart__child2 h4{
+    margin-top: 0% !important;
+    text-align: left;
+    font-size: 22px;
+    max-width: 80%;
+    white-space: nowrap;
+  }
+  .cart__child2 h6{
+    font-size: 20px;
+    max-width: 100%;  
+}
+.cart__child2 input{
+    /*position: absolute;*/
+    margin-top: -40px;
+    font-size: 20px;
+    width: 160px; 
+    height: 65px;
+    background-color:blanchedalmond !important; 
+    border: 1PX solid DarkKhaki;
+    text-align: left !important;
+    float: right;
+}
+
+.cart__child2 input:invalid+span:after {
+    position: absolute;
+    content: '✖';
+    padding-left: 5px;
+  }
+  
+  .cart__child2 input:valid+span:after {
+    position: absolute;
+    content: '✓';
+    padding-left: 5px;
+  }

@@ -20,53 +20,52 @@
 	while ($command->fetch()) {
 		$book = array($picture, $title, $author, $cost);
 		if (strpos(implode(" ", $book), $search) !== false){
+		/*session_start();*/
 		$_SESSION['picture'] = $picture;
 		$_SESSION['title'] = $title;
 		$_SESSION['author'] = $author;
 		$_SESSION['cost'] = $cost;
+
 		echo "<div class='product__container'>";	
 		echo "<form action='?page=cart.php' method='post'>";
-		echo "<holder><div class='product__child1'><img  src=$picture ></div></holder>";
-		echo "<div class='product__child2'><br><li><h4>".  $title ."</h4></li>";
-		echo "<li><h6>".  $author ."</h6></li>";
-		echo "<li>&#x24; <strong>".  $cost ."</strong><br><br><br><br><br><br><br><br><br><br><br><br></li>";
+		echo "<holder><div class='product__child1'><img name = 'picture' src=$picture ></div></holder>";
+		echo "<div class='product__child2'><br><li><h4 name = 'title'>".  $title ."</h4></li>";
+		echo "<li><h6  name = 'author'>".  $author ."</h6></li>";
+		echo "<li>&#x24; <strong name = 'cost'>".  $cost ."</strong><br><br><br><br><br><br><br><br><br><br><br><br></li>";
 		echo "<li><input type='submit' value='Add To Cart'></li></div>";
-
 		echo "</form>";
 		echo "</div>";
+	
+		/*$data = " ";
+		$picture = $_POST['picture'];
+		$picture = htmlspecialchars($picture);
+		$picture = urldecode($title);
+		$picture = trim($picture);
+		$title = $_POST['title']; 
+		$title = htmlspecialchars($title);
+		$title = urldecode($title);
+		$title = trim($title);
+		$author = $_POST['author'];
+		$author = htmlspecialchars($author);
+		$author = urldecode($author);
+		$author = trim($author);
+		$cost = $_POST['cost'];
+		$cost = htmlspecialchars($cost);
+		$cost = urldecode($cost);
+		$cost = trim($cost);
+		$cart_file = fopen('./cart.txt', 'a');
+		fwrite($cart_file, $picture);
+		fwrite($cart_file, $data);
+		fwrite($cart_file, $title);
+		fwrite($cart_file, $data);
+		fwrite($cart_file, $author);
+		fwrite($cart_file, $data);
+		fwrite($cart_file, $cost);
+		fwrite($cart_file, $data);
+		fclose($cart_file);*/
 		$items[$index] = $book;
 		$cnt += 1;
 		$index += 1;}
-	}
-	
-
-
-
-
-	if ($cnt > 1) {
-		echo "<table>";
-		echo "<th>ID</th>";
-		echo "<th>Title</th>";
-		echo "<th>Author</th>";
-		echo "<th>Genre</th>";
-		echo "<th>Price</th>";
-		echo "<th>Button</th>";
-		foreach ($items as $item) {
-			echo "<tr>";
-			//Listing properties of the book
-			foreach ($item as $subitem) {
-				echo "<td>$subitem</td>";
-			}
-			//Delete button
-			echo "<td><form action='?page=admin.php' method='post'>
-					<input type = 'hidden' name = 'id' value = '$item[0]'/>
-					<input type = 'submit' name = 'remove_book' value = 'Remove'/>
-					</form></td>";
-			echo "</tr>";
-		}
-		echo "</table>";
-	} else {
-		echo "There are currently no books in the database.";
 	}
 	?>
 	

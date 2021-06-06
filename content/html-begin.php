@@ -19,6 +19,8 @@
           href = "style/admin.css">
     <link rel = "stylesheet" type = "text/css"
           href = "style/product.css">
+    <link rel = "stylesheet" type = "text/css"
+          href = "style/cart.css">
     <script src="https://use.fontawesome.com/ef7d32b53e.js"></script>
 </head>
 <body>
@@ -26,8 +28,6 @@
 <?php if($title == "Fashion Book") { ?>
         
 <div class="container">
-   <!-- <div class="child">
-    </div>-->
     <div class="child child1">
         <img class="logo" src="style/pildid/logo.png" alt="logo" style="width: 63px; height: auto;">
     </div>    
