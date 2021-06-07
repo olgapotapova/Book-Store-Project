@@ -33,7 +33,7 @@ if (isset($_REQUEST["remove_book"])) {
 ?>
 <main>
 <section>	
-<h4>Administratsion</h4>
+<h4>Administration</h4>
 	<div class="container_post">
 		<form action='?page=admin.php' method="post">
 			<input type="hidden" name="add_book" value="jah">
