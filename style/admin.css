@@ -54,7 +54,7 @@ ul {
     background-color:rgb(243, 162, 132);
   }
 
-  table{
+  .table1{
       position: absolute;
       margin-left: 37%;
       margin-top: -430px;
@@ -62,12 +62,12 @@ ul {
       border: 3px solid rgb(164, 175, 141);
   }
 
-  table th{
+  .table1 th{
     width: 10vw;
     height: 51px;
     border: 3px solid rgb(164, 175, 141);
   }
-  table tr td{
+  .table1 tr td{
     width: 10vw;
     height: 51px;
     border: 3px solid rgb(164, 175, 141);
@@ -79,7 +79,7 @@ ul {
         margin: auto;
         width: 80%;
     }
-    table{ 
+    .table1{ 
       position: relative;
       margin-top: 0px;
       margin-left: 3%;

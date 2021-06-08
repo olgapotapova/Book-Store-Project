@@ -80,7 +80,7 @@ if (isset($_REQUEST["remove_book"])) {
 		$index += 1;
 	}
 	if ($cnt > 0) {
-		echo "<table>";
+		echo "<table class='table1'>";
 		echo "<th>ID</th>";
 		echo "<th>Title</th>";
 		echo "<th>Author</th>";
