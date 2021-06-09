@@ -25,10 +25,14 @@
     background: rgba(137, 141, 104, 0.726);
     position: relative;
     overflow:hidden;
-    width:20vw;
-    height:13vw;
+    width:17vw;
+    height:20vw;
   }
   
+.hidden{
+  visibility: hidden;
+}
+
   .cart__child1 img {
     position: absolute;
     width:100%;
@@ -54,7 +58,6 @@
     max-width: 100%;  
 }
 .cart__child2 input{
-    /*position: absolute;*/
     margin-top: -40px;
     font-size: 20px;
     width: 160px; 
@@ -62,7 +65,7 @@
     background-color:blanchedalmond !important; 
     border: 1PX solid DarkKhaki;
     text-align: left !important;
-    float: right;
+    margin-left: 20vw;
 }
 
 .cart__child2 input:invalid+span:after {

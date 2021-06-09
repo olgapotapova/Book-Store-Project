@@ -5,7 +5,89 @@
 <main>
 <section>
 <?php
-$data = " ";
+
+/*$items = fopen( './cart.txt' ,"r");
+while ($line = fgets ($items))
+{*/
+
+
+/*$ides=file('./cart.txt');
+var_dump($ides);
+$ides = file_get_contents('./cart.txt');*/
+
+//$ides = implode(", ", $ides);
+//$ides = explode(',', file_get_contents('./cart.txt'));
+// To check the number of lines
+//echo count($ides).'<br>';
+//foreach($ides as $id){
+//{
+/*    $items;
+$cnt = 0;
+$index = 0;
+    $str = file_get_contents('./cart.txt');
+    $num = preg_match_all("/[0-9]+/", $str, $matches);
+    var_dump($num);
+    $count = count($ides);
+
+  for ($i = 0; $i < $count; $i++) {
+ 
+
+$command = $yhendus->prepare("SELECT bookId, author, title, cost, genre, picture FROM Books WHERE bookId IN( . $num . )");//='" . $id . "'");   LIKE %search%
+if (!$command) {
+    die("Connection failed: " . mysqli_connect_error());
+    echo $yhendus -> error;
+}
+$command->bind_param("s", $_REQUEST["id"]);
+
+echo $yhendus -> error;
+$command->bind_result($id, $author, $title, $cost, $genre, $picture);
+$command->execute();
+while ($command->fetch()) {
+    $book = array($id, $author, $title, $genre, $cost);
+   
+
+}
+
+if ($cnt > 0) {
+    echo "<table class='table1'>";
+    echo "<th>ID</th>";
+    echo "<th>Title</th>";
+    echo "<th>Author</th>";
+    echo "<th>Genre</th>";
+    echo "<th>Price</th>";
+    echo "<th>Button</th>";
+    foreach ($items as $item) {
+        echo "<tr>";
+    
+        foreach ($item as $subitem) {
+            echo "<td>$subitem</td>";
+        }
+    
+        echo "<td><form action='?page=admin.php' method='post'>
+                <input type = 'hidden' name = 'id' value = '$item[0]'/>
+                <input type = 'submit' name = 'remove_book' value = 'Remove'/>
+                </form></td>";
+        echo "</tr>";
+    }
+    echo "</table>";
+} else {
+    echo "There are currently no books in the database.";
+}
+
+$items[$index] = $book;
+$cnt += 1;
+$index += 1;
+
+}*/
+
+
+
+
+
+
+
+
+$data = ", ";
 $id = $_REQUEST['id'];
 $id = htmlspecialchars($id);
 $id = urldecode($id);
@@ -37,51 +119,6 @@ while ($command->fetch()) {
     $items[$index] = $book;
     $cnt += 1;
     $index += 1;
-}
-
-$items=file('./cart.txt');
-// To check the number of lines
-//echo count($ides).'<br>';
-$cnt = 0;
-$index = 0;
-foreach($items as $id)
-{
-   echo $id.'<br>';
-
-$command = $yhendus->prepare("SELECT bookId, author, title, cost, genre, picture FROM Books WHERE bookId like ?");// LIKE %search%
-if (!$command) {
-    die("Connection failed: " . mysqli_connect_error());
-}
-$command->bind_param("s", $_REQUEST["id"]);
-$command->bind_result($id, $author, $title, $cost, $genre, $picture);
-$command->execute();
-
-
-
-while ($command->fetch()) {
-    $book = array($id, $title, $author, $cost);
-    $items[$index] = $book;
-    $cnt += 1;
-    $index += 1;
-}
-
-}
-if ($cnt > 0) {
-    echo "<table>";
-    echo "<th>Id</th>";
-    echo "<th>Title</th>";
-    echo "<th>Author</th>";
-    echo "<th>Price</th>";
-    foreach ($items as $item) {
-        echo "<tr>";
-
-        foreach ($item as $subitem) {
-            echo "<td>$subitem</td>";
-        }
-    }
-    echo "</table>";
-} else {
-    echo "There are currently no books in the database.";
 }
 
 

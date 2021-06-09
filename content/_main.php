@@ -14,13 +14,13 @@
 	    </form>
     </div>
 	
-	<form action="" method="post" id="form2" class="form2">
+	<form action="?page=shop.php" method="post" id="form2" class="form2">
         <div class="container_form2">
 		    <div class="holder"><div class="child_form2"><img src="style/pildid/book1.jpg" style="width: 25vw; height: auto;"></div></div>
 		    <div class="holder"><div class="child_form2"><img src="style/pildid/book2.jpg" style="width: 25vw; height: auto;"></div></div>
             <div class="holder"><div class="child_form2"><img src="style/pildid/book3.jpg" style="width: 25vw; height: auto;"></div></div>
         </div>
-        <div class="container_shop">
+        <div class="container_shop">        
             <dt><input type="submit" class="submit" name="shop" value="Shop Now"/></dt>
         </div>
 	</form>
@@ -32,8 +32,8 @@
                 <img src="style/pildid/book1.jpg" style="width: 40vw; height: auto;">
             </div>
             <div class="text_img">
-			    <p>Product Name</p>
-                <p>$300</p>
+			    <p>Play</p>
+                <p>$20</p>
             </div>
         </div>
         <div class="holder">
@@ -41,8 +41,8 @@
                 <img src="style/pildid/book3.jpg" style="width: 40vw; height: auto;" >
             </div>
             <div class="text_img">
-				<p>Product Name</p>
-                <p>$300</p>
+				<p>Beatiful Book</p>
+                <p>$50</p>
             </div>
         </div>
     </div>
